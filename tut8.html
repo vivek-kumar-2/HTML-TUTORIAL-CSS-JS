@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>This is HTML Forms Tutorial</h2>
+    <form action="backend.php">
+    <!--Here We Use br tag but next we use css for this not br-->
+    <label for="name">Name</label>
+    <div>
+    Name:<input type="text" name="myName" id="name">
+    </div>
+    <br>
+    <br>
+    Roll:<input type="number" name="myRoll">
+    <br>
+    <br>
+    <div> 
+        Email:<input type="email" name="myEmail">
+    </div>
+    <br>
+    <div>
+        Date:<input type="date" name="myDate">
+        <div>
+            <br>
+            <div>
+                Bonus:<input type="number" name="myBonus">
+            </div>
+            <!--VVI-For Ke Andar Wahi AAega Jo Id me Rahega-->
+            <label for="check">Check</label>
+            <div>
+                Are You Eligible?:<input type="checkbox" name="myEligibility" id="check"> 
+            </div>
+            <br>
+            <div>
+                <!--kisi bhi checkbox me name same rahega to EK HI SELECT hoga-->
+                Gender: Male<input type="radio" name="myGender"> Female:<input type="radio" name="myGender">
+                Other:<input type="radio" name="myGender">
+            </div>
+            <div>
+                Write About Yourself:<br><textarea name="myText" cols="50" rows="10"></textarea>
+            </div>
+            <div>
+                <label for="car">CAR</label>
+                <!--Option comes under in select-->
+                <select name="mycar" id="car">
+                    <option value="ind">Indica </option>
+                    <option value="swf">Swift</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="car">CAR</label>
+                <select name="mycar" id="car">
+                    <!--We want by default selected then we use selected-->
+                    <option value="ind" selected>Indica </option>
+                    <option value="swf">Swift</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Submit Now"> <input type="reset" name=""Reset Now>
+            </div> 
+           
+    </form>
+</body>
+</html>
