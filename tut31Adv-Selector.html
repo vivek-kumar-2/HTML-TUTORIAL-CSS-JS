@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is more selectors</title>
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* div p{
+            color: yellow;
+            font-weight: bold;
+            background-color: rgb(51, 183, 60);
+        } */
+/* 
+        div li  p{        if p is contained by any li which is contained by div
+            color: yellow;
+            font-weight: bold;
+            background-color: rgb(51, 183, 60);
+        } */
+
+        /* div > p{    if p is right inside div then this css will be applied. direct div ke child ko effect krega
+            color: yellow;
+            font-weight: bold;
+            background-color: rgb(51, 183, 60);
+        } */
+
+        /* div + p{
+            color: white;                 paragraph tag ka sibling div hai wo lega 
+             background-color: rgb(173, 112, 112);
+        } */ 
+    </style>
+</head>
+<body>
+    <h1>This Is More On Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This Is Another Paragraphj Inside Li</p></li>
+            </ul>
+            <P>This Is Paragraph</P>
+        </div>
+        <p>This Is Another Paragraph</p>
+    </div>
+    <p>This Is Outermost Paragraph</p>
+</body>
+</html>
